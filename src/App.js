@@ -8,12 +8,14 @@ import Allcategories from'./components/Allcategories';
 import Homepage from'./components/Homepage';
 import Shop from'./components/Shop';
 import Navbar from './components/Navbar';
+// import Footer from './components/footer';
 
 function App() {
   return (
     <div className="App">
     <BrowserRouter>
-    <Navbar/>
+   <Navbar/>
+    {/* <Footer/> */}
     <Routes>
      <Route path='/allcategories'element={<Allcategories/>}/>
      <Route path='/homepage'element={<Homepage/>}/>

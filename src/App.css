@@ -5,10 +5,177 @@
   display: flex;
   list-style-type: none;
 }
-li{
-  margin: 30px
+ .logo{
+  background-color: aliceblue;
+  height: 100%;
+  width: 10rem;
+  margin: 25px;
+  border-radius:10px;
+  padding: 10px 20px;
+} 
+.btn{
+   background-color:black !important;
+  height: 8vh;
+  width: 50%;
+  margin: 20px 90px;
+  color: aliceblue !important;
+}
+.icons{
+  height: 100%;
+  padding: 30px 10px;
+}
+.icon{
+  margin-left: 20px;
+
+}
+.headers{
+  margin: 30px;
+  font-weight: 700;
 }
 .container{
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  margin: 40px;
+} 
+.container-img{
+  height: 100%;
+  width: 100%;
+  display:flex;
+  padding: 30px;
+}
+.container-img1{
+  height: 100%;
+  width: 100%;
+  padding: 0px 30px;
+}
+.footer{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.footer1{
+  background-size: cover;
+  position: relative;
+}
+.Images-discount{
+height: 235px;
+width: 100%;
+position: absolute;
+}
+.footer2{
+  position:relative;
+  text-align: center;
+  margin: 50px;
+}
+ .email{
+  border: none;
+  background-color: transparent;
+}
+.eicon{
+  color:hsl(0, 0%, 2%);
+  margin:14px 10px;
+}
+.mail{
+  padding: 60px 500px;
+  height: 11rem;
+}
+.mail1{
+  background-color: white;
+  width: 300px;
+  padding: 5px;
+}
+.button{
+  border: none;
+}
+.footer3{
+  background-color: white;
+  text-align: center;
+  margin: 50px;
+  height: 8vh;
+}
+.logo-footer{
+  height: 100%;
+  justify-content: center;
+}
+.footer-content{
+  height: 100%;
+  width: 100%;
+}
+.footer-content1{
+  display: flex;
+  padding: 0px 90px;
+  
+}
+
+.about{
+  margin: 60px 100px;
+}
+
+.about p{
+  width: 11em;
+  word-wrap: break-word;
+}
+.feature{
+  margin: 60px;
+}
+.general{
+  margin: 60px;
+}
+.helpful{
+  margin: 60px;
+}
+.footer-icon{
+  display: flex;
+  margin: 20px 30px;
+}
+.fi{
+  margin: 10px;
+  height: 10vh;
+  width: 1.2rem;
+}
+.fi-text{
+  padding: 35px 20px;
+}
+.quomodosof{
+  font-weight: bold;
+}
+.Images-payment{
+  margin-left: 550px;
+  margin-top: 30px;
+}
+.img3{
+  height: 50vh;
+  width: 40vh;
+  padding: 40px 30px;
+  background-size: cover;
+  position: relative;
+}
+.main{
+  margin:0px 90px;
+}
+ ul{
+  list-style-type: none; 
+}
+.title{
+  width: 100%;
+}
+.dp{
+  text-decoration: line-through;
+  color: grey;
+}
+.mobiles{
+  margin: 10px;
+  padding: 0px 0px;
+}
+.Images-section{
+  position: absolute;
+  height: 82vh;
+  width: 15%;
+}
+.text{
+position:relative;
+}
+li{
+  margin:40px;
 }
