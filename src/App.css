@@ -170,12 +170,31 @@ position: absolute;
 }
 .Images-section{
   position: absolute;
-  height: 82vh;
-  width: 15%;
+  height: 72vh;
+  width: 17%;
 }
 .text{
 position:relative;
 }
 li{
   margin:40px;
+}
+.brand{
+  height: 100%;
+  width: 100%;
+}
+.brand-logo{
+  background-color:white;
+  height: 50vh;
+  width: 100%;
+  margin: 20px 10px;
+}
+.brand-logo1{
+  height: 11vh;
+  width: 11%;
+  padding: 20px 20px;
+  margin: 50px 40px;
+  
+}
+.products-img{
 }

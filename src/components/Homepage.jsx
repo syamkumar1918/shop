@@ -13,6 +13,23 @@ import product1 from './Images/product1.jpg'
 import product2 from './Images/product2.jpg'
 import {BiChevronRight} from 'react-icons/bi'
 import{BsArrowRight} from 'react-icons/bs'
+import brand1 from './Images/brand1.png'
+import brand2 from './Images/brand2.png'
+import brand3 from './Images/brand3.png'
+import brand4 from './Images/brand4.png'
+import brand5 from './Images/brand5.png'
+import brand6 from './Images/brand6.png'
+import brand7 from './Images/brand7.png'
+import brand8 from './Images/brand8.png'
+import brand9 from './Images/brand9.png'
+import brand10 from './Images/brand10.png'
+import brand11 from'./Images/brand11.png'
+import brand12 from './Images/brand12.png' 
+import products1 from './Images/products1.jpg'
+import products2 from './Images/product2.jpg'
+import products3 from './Images/products3.jpg'
+import products4 from './Images/products4.jpg'
+
 const productList = [
   {
     id:1,
@@ -38,6 +55,47 @@ const productList = [
     price:'$17.13',
     discount:'$32.54'
   },
+]
+
+const products =[
+  {
+    id:1,
+    imageUrl:products1,
+    rating:5,
+    title:'Senmei ipsum dolore eiusmod dolor officia do nisi',
+    price:'$27.61',
+    discount:'$20.67',
+    button:'Add To Cart',
+  },
+  {
+    id:2,
+    imageUrl:products2,
+    rating:5,
+    title:'Unisure aliqua repreh ex cupt qui elit officia',
+    price:'$16.43',
+    dicount:'$36.90',
+    button:'Add To Cart'
+
+  },
+
+  {
+   id:3,
+   imageUrl:products3,
+   rating:5,
+   title:'Canopoly duis voluptate dolor sunt sit adipisicing in',
+   price:'$10.42',
+   discount:'$39.27',
+   button:'Add To Cart'
+  },
+  {
+    id:4,
+    imageUrl:products4,
+    rating:5,
+    title:'Kenegy consectetur id ex nulla in adipisicing deserunt',
+    price:'$11.92',
+    discount:'$26.62',
+    button:'Add To Cart'
+  }
 ]
 
 
@@ -139,6 +197,48 @@ function Homepage() {
         })}
       </ul>
       </div>
+      <div className='brand'>
+        <h2>Shop by Brand</h2>
+        <div className='brand-logo'>
+          <div className='logo2'>
+        <img className='brand-logo1' src={brand1} alt='img'/>
+        <img className='brand-logo1' src={brand2} alt='img'/>
+        <img className='brand-logo1' src={brand3} alt='img'/>
+        <img className='brand-logo1' src={brand4} alt='img'/>
+        <img className='brand-logo1' src={brand5} alt='img'/>
+        <img className='brand-logo1' src={brand6} alt='img'/>
+        </div>
+        <div>
+        <img className='brand-logo1' src={brand7} alt='img'/>
+        <img className='brand-logo1' src={brand8} alt='img'/>
+        <img className='brand-logo1' src={brand9} alt='img'/>
+        <img className='brand-logo1' src={brand10} alt='img'/>
+        <img className='brand-logo1' src={brand11} alt='img'/>
+        <img className='brand-logo1' src={brand12} alt='img'/>
+        </div>
+        </div>
+      </div>
+      <h2> Top Selling Products</h2>
+      <ul className=' products-ul bg-warning row col-lg-6 w-100'>
+        {products.map((eachproduct) =>{
+          return(
+            <li className=' products-li row col-xl-6 ' key={eachproduct.id}>
+              <div className='products-main d-flex'>
+              <img className='products-img' src={eachproduct.imageUrl} alt='img'/>
+              <div className='text-products'>
+              <h4>{eachproduct.title}</h4>
+              <p> Rating:{eachproduct.rating}</p>
+              <p className='products-discount'> {eachproduct.discount}</p>
+              <p className='products-price'> {eachproduct.price}</p>
+              <button className='bg-warning'>{eachproduct.button}</button>
+              </div>
+              </div>
+
+            </li>
+          )
+        }
+        )}
+      </ul>
       <Footer/>
     </div>
 
